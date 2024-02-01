@@ -13,20 +13,23 @@ function QuestSet({quotes}){
 
 
 <>
+
+<div className='quote-container'>
+<h1>Character’s Quote</h1>
 <ul>
-    <li>
-        sfdsfsdfsdfsdf
-    </li>
-    <li>
-        fsgsdfsdfsdf
-    </li>
-    <li>
-        zxdfsdfsdfsdf
-    </li>
+{quotes && quotes.map(quote => (
+          <li key={quote.id}>{quote.quote}</li>
+        ))}
+      </ul>
+<div className='button-container'>
+<button  className="button" onClick={handleGoHomeClick}> Go to home page</button>
+</div>
+      
+</div>
 
-</ul>
 
-<button onClick={handleGoHomeClick}> Go to home page</button>
+
+
 </>
 
     );
