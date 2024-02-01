@@ -1,12 +1,22 @@
 
 import './App.scss';
-import Background from './components/Background/Background';
+import HomePage from './pages/Homepage';
+import QuotesPage from './pages/QuotesPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-<Background/>
+    <Routes>
+    <Route path="/" element={<HomePage />} />;
+    <Route path="/Quotes" element={<QuotesPage />} />;
+    </Routes>
+
+
     </div>
+    </BrowserRouter>
   );
 }
 

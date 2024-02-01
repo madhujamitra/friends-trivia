@@ -6,6 +6,8 @@ function Card(){
     return(
        <div className='card'>
   <ImageSet></ImageSet>
+
+
        </div>
     )
 
