@@ -1,0 +1,11 @@
+@use '../../style/partials/mixin.scss' as *;
+@use '../../style/partials/variables.scss' as *;
+.Background{
+    background-color: $BaseColour;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-Index: -1;
+}
